@@ -5,4 +5,4 @@
   - name: Update /etc/apt/sources.list
     copy: src=files/sources.list dest=/etc/apt/sources.list mode=0644 owner=root
   - name: Install the package "apache"
-    apt: name=apache2 state=present
+    apt: name=apache2 update_cache=yes state=present
