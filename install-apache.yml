@@ -1,2 +1,6 @@
-# Install the package "apache"
-- apt: name=apache2 state=present
+---
+- name: openstack vm management demo
+  hosts: www
+  tasks: 
+  - name: Install the package "apache"
+    apt: name=apache2 state=present
